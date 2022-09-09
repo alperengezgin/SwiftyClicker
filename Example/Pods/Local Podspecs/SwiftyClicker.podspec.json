@@ -1,0 +1,36 @@
+{
+  "name": "SwiftyClicker",
+  "version": "0.1.0",
+  "summary": "SwiftyClicker is multi-clicker for iOS",
+  "homepage": "https://github.com/alperengezgin/SwiftyClicker",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "Alperen Polat GEZGIN": "alperengezgin@gmail.com"
+  },
+  "source": {
+    "git": "https://github.com/alperengezgin/SwiftyClicker.git",
+    "tag": "0.1.0"
+  },
+  "social_media_url": "https://twitter.com/alperengezgin",
+  "platforms": {
+    "ios": "13.0"
+  },
+  "source_files": "SwiftyClicker/Classes/**/*",
+  "resource_bundles": {
+    "SwiftyClicker": [
+      "SwiftyClicker/Assets/*.{png,json,xcassets}"
+    ]
+  },
+  "frameworks": [
+    "UIKit",
+    "WebKit"
+  ],
+  "dependencies": {
+    "SwiftyUserDefaults": [
+
+    ]
+  }
+}

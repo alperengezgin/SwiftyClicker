@@ -1,0 +1,6 @@
+framework module SwiftyClicker {
+  umbrella header "SwiftyClicker-umbrella.h"
+
+  export *
+  module * { export * }
+}

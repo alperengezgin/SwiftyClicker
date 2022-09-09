@@ -1,15 +1,39 @@
 # SwiftyClicker
 
-[![CI Status](https://img.shields.io/travis/Alperen Polat GEZGIN/SwiftyClicker.svg?style=flat)](https://travis-ci.org/Alperen Polat GEZGIN/SwiftyClicker)
-[![Version](https://img.shields.io/cocoapods/v/SwiftyClicker.svg?style=flat)](https://cocoapods.org/pods/SwiftyClicker)
-[![License](https://img.shields.io/cocoapods/l/SwiftyClicker.svg?style=flat)](https://cocoapods.org/pods/SwiftyClicker)
-[![Platform](https://img.shields.io/cocoapods/p/SwiftyClicker.svg?style=flat)](https://cocoapods.org/pods/SwiftyClicker)
 
 ## Example
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
 
-## Requirements
+## Usage
+
+```ruby
+let swiftyClicker = SwiftyClicker()
+if let browserView = swiftyClicker.getSwifytClickerView(frame: view.frame) {
+  view.addSubview(browserView)
+  swiftyClicker.setupSwiftyClicker(settings: SwiftyClickerSettings(type: .scroller)) // .clicker, .refresher
+  swiftyClicker.load(url: "search text or url")
+}
+```
+Start Scroller
+```ruby
+self.swiftyClicker.startScroller(px: 300) { err, response in
+
+}
+```
+Start Refresher
+```ruby
+self.swiftyClicker.startRefresher { err, response in
+                
+}
+```
+Start Clicker
+```ruby
+self.swiftyClicker.updateMarks(numberOfMark: 1) // Marks count be in 1-5
+self.swiftyClicker.startClicker { err, response in
+
+}
+```
 
 ## Installation
 
